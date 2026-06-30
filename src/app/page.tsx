@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -24,12 +25,13 @@ export default function Home() {
       
       <div className="content-wrapper">
         <header>
-          <div className="logo">Century</div>
+          <Image src="/logo.svg" alt="Century Logo" width={200} height={200} priority className="logo-img" />
         </header>
 
         <main>
+          <div style={{ color: 'var(--gold)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '1rem', fontSize: '0.9rem', fontWeight: 500 }}>Coming Soon</div>
           <h1 className="main-title">
-            Coming Soon
+            Crafted for Memories
           </h1>
           
           <div className="divider">
